@@ -2624,7 +2624,13 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 1px #47D3E5;
 		color: #47D3E5;
 	}
-
+/* iframe */
+iframe {
+	height: 100%;
+	width: 100%;
+	resize: both;
+	overflow: auto;
+}
 /* Image */
 
 	.image {
