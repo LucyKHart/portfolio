@@ -2587,11 +2587,12 @@ input, select, textarea {
 		}
 
 		.icon.style2:before {
-			border-radius: 2.75em;
+			/*changing stuff here*/
+			border-radius: 4em;
 			display: inline-block;
-			height: 2.75em;
-			line-height: 2.75em;
-			width: 2.75em;
+			height: 4em;
+			line-height: 4em;
+			width: 4em;
 		}
 
 		.icon.major {
@@ -4435,6 +4436,123 @@ iframe {
 	.banner.style4.invert.android .image:after {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='6' y='4' width='52' height='24' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 	}
+/* Reset and Basic Styling */
+
+body {
+
+	font-family: Arial, sans-serif;
+
+	text-align: center;
+
+	margin: 0;
+
+	padding: 20px;
+
+	background-color: #f5f5f5;
+
+}
+
+/* Gallery Container */
+
+.gallery {
+
+	display: flex;
+
+	flex-wrap: wrap;
+
+	justify-content: center;
+
+	gap: 10px;
+
+	max-width: 900px;
+
+	margin: auto;
+
+}
+
+/* Gallery Items */
+
+.gallery-item {
+
+	flex: 1 1 calc(50% - 10px);
+
+	max-width: calc(50% - 10px);
+
+	overflow: hidden;
+
+	border-radius: 10px;
+
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.gallery-item img {
+
+	width: 100%;
+
+	height: auto;
+
+	display: block;
+
+}
+
+
+/* Responsive Design */
+/*Trying to do the image change on click thing*/
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/*end*/
+
+@media (max-width: 600px) {
+
+	.gallery-item {
+
+		flex: 1 1 calc(50% - 10px);
+
+		max-width: calc(50% - 10px);
+
+	}
+
+}
 
 /* Spotlight (transitions) */
 

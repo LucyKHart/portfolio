@@ -41,17 +41,16 @@
 	}
 </style>
 <div class="navbar">
-	<a href="#Projects">Projects</a>
-	<a href="#contact">Contact</a>
+	<a href="index.html">All Projects</a>
 </div>
 
-<head>
+
 	<title>Story by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+
 <!--about me -->
 <section class="banner style3 onscroll-image-fade-in color6">
 	<div class="content">
@@ -65,27 +64,55 @@
 		<img src="images/Headshot.jpg" alt="" />
 	</div>
 </section>
-<!-- Urban Heat Islands -->
-<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+<!--Project Gallery--->
+<section id="Projects">
+<h1>Project Gallery</h1>
 
-	<div class="image">
-		<div style = "padding:20px; background-color: white;">
-			<h1> Urban Heat Islands </h1>
-			<p>I created this dashboard in the lab section of Introduction to Geographic Information Systems.</p>
+<div class="gallery">
+
+<!--Message Merger--->
+		<div class="gallery-item">
+			<div class="container">
+				<img src="./images/ProjectThumbnails/1.png" alt="Image 1" >				<div class="overlay">
+					<div class="text" onclick="location.href='MessageMerger.html'" >Message Merger</div>
+				</div>
 			</div>
 
-		<iframe src="https://uvm.maps.arcgis.com/apps/dashboards/47d440c739b949ab878241afe4770e53"></iframe>
+		</div>
+	<!--Coin Sorter--->
+	<div class="gallery-item">
+		<div class="container">
+			<img src="./images/ProjectThumbnails/2.png" alt="Image 1" >				<div class="overlay">
+			<div class="text" onclick="location.href='CardboardCoinSorter.html'" >Cardboard Coin Sorter</div>
+		</div>
+		</div>
 	</div>
-</section>
-<!-- Cardboard Coin Sorter -->
-
-<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-
-	<div class="image">
-		<h1> Cardboard Coin sorter</h1>
-		<iframe width=50% height=50%
-				src="https://www.youtube.com/embed/9ebkQCkpm3s">
-		</iframe>
-
+	<!--Heat Islands--->
+	<div class="gallery-item">
+		<div class="container">
+			<img src="./images/ProjectThumbnails/3.png" alt="Image 1" >				<div class="overlay">
+			<div class="text" onclick="location.href='HeatIslands.html'" >Urban Heat Islands</div>
+		</div>
+		</div>
 	</div>
+	<!---Burlington Car Crash-->
+	<div class="gallery-item">
+		<div class="container">
+			<img src="./images/ProjectThumbnails/4.png" alt="Image 1" >				<div class="overlay">
+			<div class="text" onclick="window.location.href='https://storymaps.arcgis.com/stories/9383d05ac74c48dda71c46eeb3547517';">Burlington Car Crash Analysis</div>
+		</div>
+		</div>
+	</div>
+	<!---Baristeria-->
+	<div class="gallery-item">
+		<div class="container">
+			<img src="./images/ProjectThumbnails/5.png" alt="Image 1" >				<div class="overlay">
+			<div class="text"  onclick="location.href='Baristeria.html'">Baristeria</div>
+		</div>
+		</div>
+	</div>
+
+
+
+</div>
 </section>
